@@ -1,10 +1,10 @@
 /**
-  * Transpose Matrix
-  *
-  * Time Complexity: O(n)
-  *
-  * Space Complexity: O(n)
-  */
+ * Transpose Matrix
+ *
+ * Time Complexity: O(n)
+ *
+ * Space Complexity: O(n)
+ */
 export function transposeMatrix(matrix: number[][]): number[][] {
   const numRows = matrix.length;
   const numCols = matrix[0].length;
@@ -22,7 +22,5 @@ export function transposeMatrix(matrix: number[][]): number[][] {
     }
   }
 
-
   return transposedMatrix;
 }
-

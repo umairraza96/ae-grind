@@ -39,7 +39,6 @@ export function sortedSquaredArray(array: number[]): number[] {
   let newArr = new Array(array.length).fill(0);
   let leftPointer = 0;
   let rightPointer = array.length - 1;
-  let newArrIdx = array.length - 1;
 
   /**
    * While Loop
