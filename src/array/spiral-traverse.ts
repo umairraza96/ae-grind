@@ -42,7 +42,6 @@ export function spiralTraverse(spiralArray: number[][]): number[] {
 export function spiralTraverseRecursion(array: number[][]): number[] {
   let resultArray: number[] = [];
   spiralFill(array, 0, array.length - 1, 0, array[0].length - 1, resultArray);
-  console.log(resultArray);
   return resultArray;
 }
 
@@ -55,7 +54,6 @@ function spiralFill(
   resultArray: number[],
 ) {
   if (startRow > endRow || startCol > endCol) {
-    console.log("recurse");
     return;
   }
 
