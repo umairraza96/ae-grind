@@ -1,9 +1,12 @@
 export function threeNumberSum(array: number[], target: number): number[][] {
   array.sort((a, z) => a - z);
   const newArray = [];
+  /*
+   * array.length -2 iteration because we need 3 numbers to sum it up
+   */
   for (let i = 0; i < array.length - 2; i++) {
     let leftPointer = i + 1;
-    let rightPointer = array.length - 1 - i;
+    let rightPointer = array.length - 1;
     const currentElement = array[i];
 
     while (leftPointer < rightPointer || rightPointer > leftPointer) {
